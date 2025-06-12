@@ -9,50 +9,62 @@
     * {
       box-sizing: border-box;
     }
-    
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background: #FFFFFF;
       color: #333;
     }
-    
+
     header {
-      background: url('https://i.postimg.cc/FRc6yjwD/Screenshot-20250601-224400-Google.jpg') center/cover no-repeat;
+      background: url('https://c4.wallpaperflare.com/wallpaper/48/295/650/genshin-impact-furina-genshin-impact-anime-anime-girls-hd-wallpaper-preview.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    /* Container holding h1 and the two p's */
+    .header-content {
+      background: url('https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyaW9kejNqcGx0YW8yaWplMmwzZTJzZzY3MDkyMHpscjZpMWNqMTdqMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Eqz8ZFUScPHH2/giphy.gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(79, 249, 255, 0.9);
+      max-width: 90vw;
+      text-align: center;
+      padding: 2rem 3rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      color: #FFFFFF;
-      text-shadow: 0 0 10px #30D2FF;
-      width: 300px;
-      height: auto;
-
-
+      gap: 0.5rem;
     }
-    
-    header h1 {
+
+    .header-content h1 {
       font-size: 6rem;
       margin: 0;
       font-weight: 1000;
     }
-    
-    header p {
+
+    .header-content p {
       font-size: 3rem;
-      margin-top: 0.1rem;
+      margin: 0;
       font-weight: 300;
     }
-    
+
     main {
       max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    
+
     section {
       margin-bottom: 1rem;
     }
-    
+
     h2 {
       font-weight: 600;
       border-bottom: 3px solid #3b82f6;
@@ -60,19 +72,19 @@
       margin-bottom: 1.2rem;
       color: #2563eb;
     }
-    
+
     .description {
       font-weight: 300;
       line-height: 1.6;
       font-size: 1.1rem;
     }
-    
+
     .highlights {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
     }
-    
+
     .highlight-card {
       background: #00FFD600;
       border-radius: 12px;
@@ -81,24 +93,24 @@
       transition: transform 0.3s ease;
       cursor: pointer;
     }
-    
+
     .highlight-card:hover {
       transform: translateY(-6px);
     }
-    
+
     .highlight-card h3 {
       margin-top: 0;
       color: #1E3A8A;
       font-weight: 1000;
       font-size: 1.5rem;
     }
-    
+
     .highlight-card p {
       font-weight: 300;
       font-size: 1rem;
       line-height: 1.4;
     }
-    
+
     footer {
       background: #2563eb;
       color: white;
@@ -107,17 +119,14 @@
       font-weight: 300;
       font-size: 1rem;
     }
-    
-    @media (max-width: 800px) {
-      header h1 {
+
+  
+      .header-content h1 {
         font-size: 3rem;
-        color: #FFFFFF;
       }
-      
-      header p {
+
+      .header-content p {
         font-size: 1.2rem;
-        color: #FFFFFF;
-        font-weight: 300;
       }
     }
   </style>
@@ -125,54 +134,58 @@
 
 <body>
   <header>
-    <h1>KELAS XI TKJ-2</h1>
-    <p>kelas apa,???</p>
-    <p>kelas king 🥶🥶 (backround sementara)</p>
+    <div class="header-content">
+      <h1>KELAS XI TKJ-2</h1>
+      <p>kelas apa,???</p>
+      <p>kelas king 🥶🥶 (background sementara)</p>
+    </div>
   </header>
+
   <main>
     <section class="description">
       <h2>tentang 11 TKJ-2</h2>
-      <p>
-        web resmi 11 TKJ 2 smekid bolo 🚀🚀😹
-      </p>
+      <p>web resmi 11 TKJ 2 😹</p>
     </section>
+
     <section class="highlights-section">
       <h2>daftar isi</h2>
       <div class="highlights">
         <div class="highlight-card" onclick="window.location.href='1.html'">
           <h3>jadwal mata pelajaran</h3>
-          <p>gak tawu</p>
+          <p>smester 1</p>
         </div>
         <div class="highlight-card" onclick="window.location.href='2.html'">
           <h3>jadwal piket</h3>
-          <p>gak tawu</p>
+          <p>belum di isi</p>
         </div>
         <div class="highlight-card" onclick="window.location.href='3.html'">
           <h3>barcode absen siswa</h3>
-          <p>gak twu</p>
+          <p>belum di isi</p>
         </div>
         <div class="highlight-card" onclick="window.location.href='4.html'">
           <h3>isi peralatan kelas</h3>
-          <p>gak tawu kan belum di beri tahu.</p>
+          <p>belum di isi</p>
         </div>
         <div class="highlight-card" onclick="window.location.href='5.html'">
           <h3>kas kelas</h3>
-          <p>gak tawu kan belum di beri tahu.</p>
+          <p>belum di isi.</p>
         </div>
         <div class="highlight-card" onclick="window.location.href='6.html'">
           <h3>pengumuman</h3>
-          <p>gak tawu.</p>
+          <p>besok ada kurban</p>
         </div>
         <div class="highlight-card" onclick="window.location.href='7.html'">
           <h3>coming soon!!!</h3>
-          <p>gak tawu.</p>
+          <p>buat foto2 masa smk </p>
         </div>
       </div>
     </section>
   </main>
+
   <footer>
-    <p>by :whyu144p,& nandaanomiyos(github.com) | Phone: samsung A10s</p>
-    <p>© 2045 menuju Indonesia (c)emas🙏👆</p>
+    <p>by: whyu144p, & nandaanomiyos (github.com) </p>
+    <p>© 2045 menuju Indonesia (c) emas 🙏👆</p>
   </footer>
 </body>
-  </html>
+
+</html>
